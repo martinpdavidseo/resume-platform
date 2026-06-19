@@ -2,5 +2,12 @@ Interview questions for git
 
 git add filename.txt
 git add .
+
 git commit -m "Your descriptive commit message here"
-git push -u origin your-branch-name
+
+git push 
+
+#new branch
+git checkout -b develop
+git push -u origin develop
+

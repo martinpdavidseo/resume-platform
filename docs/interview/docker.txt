@@ -1,0 +1,15 @@
+docker --version
+docker ps --- All running containres
+docker ps -a  --- All containers , exited also
+
+docker images
+
+docker run <imagename>
+docker run hello-world
+docker run -d nginx  
+---- -d detachmode
+docker run -d -p 8080:80 nginx   
+----- -p is for publishing the port computers 8080 port will be mapped to 80 port of container.
+----- so when we do http://localhost:8080 this will navigate to container port 80
+
+docker stop <containerid>
