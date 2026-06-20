@@ -6,8 +6,9 @@ git add .
 git commit -m "Your descriptive commit message here"
 
 git push 
-
+git push -u origin develop
+    
 #new branch
 git checkout -b develop
-git push -u origin develop
+
 

@@ -13,3 +13,13 @@ docker run -d -p 8080:80 nginx
 ----- so when we do http://localhost:8080 this will navigate to container port 80
 
 docker stop <containerid>
+
+docker build -t <imagename> . 
+----  to build image from 'Dockerfile'-t is tag name
+
+What is Docker?
+Docker packages an application and its dependencies into a portable image that can run consistently across environments.
+
+This is called Docker Layer Caching.
+Docker reused Layer 1 and only rebuilt the layer affected by the file change.
+Docker caches layers. If a layer hasn't changed, Docker reuses it instead of rebuilding it.
