@@ -1,0 +1,22 @@
+Azure DevOps	        GitHub Actions
+---------------------------------------
+Pipeline	            Workflow
+Agent	                Runner
+Variable Group	        Secrets
+Stage	                Environment
+Service Connection	    Service Principal + Secrets
+
+A workflow is a GitHub Actions pipeline defined in YAML that automates tasks such as validation, build, testing, deployment, and infrastructure provisioning.
+
+Secrets are encrypted values stored in GitHub and used by workflows to securely access credentials, tokens, and sensitive information.
+
+The collection of all these workflows is what we call GitHub Actions.
+GitHub Actions = The Service
+
+terraform-plan.yml = A Workflow
+docker-build.yml = A Workflow
+deploy-aks.yml = A Workflow
+
+GitHub Actions = Platform
+Workflow = Individual Pipeline
+Runner = Machine executing the workflow

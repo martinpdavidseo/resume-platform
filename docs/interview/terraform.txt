@@ -1,0 +1,27 @@
+# Terraform Interview Notes
+
+## What is Terraform?
+Terraform is an Infrastructure as Code (IaC) tool used to provision and manage infrastructure through declarative configuration files.
+
+## Key Concepts
+- Provider
+- Resource
+- Variable
+- Output
+- Local
+- Module
+- State File
+- Backend
+
+az login 
+az logut 
+
+terraform --version
+terraform init
+terraform validate 
+terraform plan
+terraform plan -var-file="../configs/dev.tfvars"
+Terraform Plan compares the desired infrastructure defined in code with the current infrastructure state and generates an execution plan showing what resources will be created, modified, or destroyed without making any changes.
+
+terraform apply
+terraform apply -var-file="../configs/dev.tfvars"
