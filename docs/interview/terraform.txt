@@ -18,6 +18,8 @@ az logut
 
 terraform --version
 terraform init
+terraform init -backend-config=../backend/dev.hcl
+
 terraform validate 
 terraform plan
 terraform plan -var-file="../configs/dev.tfvars"
@@ -25,3 +27,15 @@ Terraform Plan compares the desired infrastructure defined in code with the curr
 
 terraform apply
 terraform apply -var-file="../configs/dev.tfvars"
+
+terraform state list 
+list all the resource in state file
+
+terraform state show azurerm_resource_group.bootstrap
+Get detail of a specific resource from statefile
+
+terraform show
+This shows Terraform's current view of the world.
+
+Migrate state file
+terraform init -backend-config "..\backend\dev.hcl" -migrate-state

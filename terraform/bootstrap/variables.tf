@@ -12,3 +12,15 @@ variable "resource_group_name" {
   description = "Resource Group Name"
   type        = string
 }
+
+variable "storage_account_name" {
+  type = string
+}
+
+variable "environment" {
+  type = string
+}
+
+variable "project_name" {
+  type = string
+}
