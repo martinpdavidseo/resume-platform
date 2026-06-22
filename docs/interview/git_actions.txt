@@ -1,0 +1,1 @@
+Setting --> secret --> Actions-->Repository secrets --> Add clientid, tenentid, subscription id..
