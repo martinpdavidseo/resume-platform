@@ -9,9 +9,10 @@ git push
 git push -u origin develop
 ------ What it does: It pushes your code and tells Git to remember the relationship between your local develop branch and the develop branch on origin (GitHub).
 ------ Why use it: You only need to run this the very first time you push a new branch. Once you run it, Git links them up forever.
-
+The -u means: Set upstream tracking
 
 #new branch
-git checkout -b develop
+git checkout <branch> 
+git checkout -b <new branch>
 
 
