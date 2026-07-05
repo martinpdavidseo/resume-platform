@@ -1,0 +1,16 @@
+An App Registration defines an application identity in Entra ID. 
+A Service Principal is the security principal created from that application and used for authentication and authorization.
+
+How does GitHub Actions authenticate to Azure?
+Using a Service Principal and Client Secret.
+Using Azure Workload Identity Federation with GitHub OIDC. 
+GitHub obtains a short-lived identity token which Azure Entra ID validates through a Federated Credential, eliminating the need for long-lived secrets.
+Federated Credentials eliminate long-lived secrets. 
+Azure trusts short-lived OIDC tokens issued by GitHub for a specific repository and workflow. 
+Even if the Client ID, Tenant ID, and Subscription ID are known, authentication is impossible without a valid federated identity token, reducing the risk of credential leakage and simplifying secret management.
+
+What is the difference between an App Registration and an Enterprise Application?
+An App Registration is the global definition of an application identity in Entra ID and contains authentication settings such as federated credentials, secrets, and API permissions.
+An Enterprise Application is the service principal instance of that application within a tenant and is used for authorization, RBAC assignments, sign-ins, and access control.
+App Registration = Who are you?
+Enterprise Application = What are you allowed to do?

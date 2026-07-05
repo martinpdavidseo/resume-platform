@@ -1,0 +1,25 @@
+docker --version
+docker ps --- All running containres
+docker ps -a  --- All containers , exited also
+
+docker images
+
+docker run <imagename>
+docker run hello-world
+docker run -d nginx  
+---- -d detachmode
+docker run -d -p 8080:80 nginx   
+----- -p is for publishing the port computers 8080 port will be mapped to 80 port of container.
+----- so when we do http://localhost:8080 this will navigate to container port 80
+
+docker stop <containerid>
+
+docker build -t <imagename> . 
+----  to build image from 'Dockerfile'-t is tag name
+
+What is Docker?
+Docker packages an application and its dependencies into a portable image that can run consistently across environments.
+
+This is called Docker Layer Caching.
+Docker reused Layer 1 and only rebuilt the layer affected by the file change.
+Docker caches layers. If a layer hasn't changed, Docker reuses it instead of rebuilding it.

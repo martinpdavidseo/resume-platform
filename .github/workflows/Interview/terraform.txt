@@ -1,0 +1,41 @@
+# Terraform Interview Notes
+
+## What is Terraform?
+Terraform is an Infrastructure as Code (IaC) tool used to provision and manage infrastructure through declarative configuration files.
+
+## Key Concepts
+- Provider
+- Resource
+- Variable
+- Output
+- Local
+- Module
+- State File
+- Backend
+
+az login 
+az logut 
+
+terraform --version
+terraform init
+terraform init -backend-config=../backend/dev.hcl
+
+terraform validate 
+terraform plan
+terraform plan -var-file="../configs/dev.tfvars"
+Terraform Plan compares the desired infrastructure defined in code with the current infrastructure state and generates an execution plan showing what resources will be created, modified, or destroyed without making any changes.
+
+terraform apply
+terraform apply -var-file="../configs/dev.tfvars"
+
+terraform state list 
+list all the resource in state file
+
+terraform state show azurerm_resource_group.bootstrap
+Get detail of a specific resource from statefile
+
+terraform show
+This shows Terraform's current view of the world.
+
+Migrate state file
+terraform init -backend-config "..\backend\dev.hcl" -migrate-state

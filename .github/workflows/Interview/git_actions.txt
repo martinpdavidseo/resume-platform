@@ -1,0 +1,20 @@
+Setting --> secret --> Actions-->Repository secrets --> Add clientid, tenentid, subscription id..
+
+Repository Secrets are available to all workflows within the repository.
+Environment Secrets are tied to a specific environment such as Dev, QA, or Prod and can be combined with approval gates.
+
+GitHub automatically discovers workflow files under:
+.github/workflows
+Both folder names are mandatory.
+
+The id-token: write permission allows the GitHub Actions runner to request a short-lived OIDC token from GitHub. Azure Login uses this token to authenticate with Azure Entra ID through the configured Federated Credential.
+Without this permission, GitHub cannot issue the OIDC token and Azure authentication fails.
+
+
+
+
+
+
+
+
+
