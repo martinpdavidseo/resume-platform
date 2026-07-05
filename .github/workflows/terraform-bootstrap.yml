@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - develop
+    paths:
+      - "terraform/bootstrap/**"
 
 permissions:
   id-token: write
