@@ -16,7 +16,7 @@ permissions:
   contents: read
 
 jobs:
-  stage 1:
+  stage_1:
     name: Terraform validation and plan
     runs-on: ubuntu-latest
 
@@ -51,9 +51,9 @@ jobs:
       - name: Terraform Plan
         run: terraform plan -var-file=../configs/dev-platform.tfvars
 
-  stage 2:
+  stage_2:
     name: Terraform Apply
-    needs: stage 1
+    needs: stage_1
     if: github.ref == 'refs/heads/main' 
     runs-on: ubuntu-latest
 
