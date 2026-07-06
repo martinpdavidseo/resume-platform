@@ -1,6 +1,9 @@
 name: Terraform Platform
 
 on:
+
+  workflow_dispatch:
+  
   push:
     branches:
       - develop
