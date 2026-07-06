@@ -21,7 +21,3 @@ variable "project_name" {
   type = string
 }
 
-variable "github_sp_object_id" {
-  description = "Object ID of GitHub Service Principal"
-  type        = string
-}
