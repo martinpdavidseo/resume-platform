@@ -3,7 +3,7 @@ name: Terraform Platform
 on:
 
   workflow_dispatch:
-  
+
   push:
     branches:
       - develop
@@ -16,8 +16,8 @@ permissions:
   contents: read
 
 jobs:
-  name: Terraform validation and plan
   stage 1:
+    name: Terraform validation and plan
     runs-on: ubuntu-latest
 
     defaults:
