@@ -1,0 +1,43 @@
+## Project Goal
+
+Build a cloud-native resume platform on Azure using modern cloud engineering practices.
+
+## Technologies
+
+- GitHub
+- Terraform
+- Docker
+- Azure Container Registry
+- Azure Kubernetes Service
+- GitHub Actions
+- Azure OpenAI
+- Azure AI Search
+- Azure Communication Services
+- Azure Monitor
+- Key Vault
+
+## Phases
+
+### Phase 1
+Repository Setup
+
+### Phase 2
+Docker
+
+### Phase 3
+Terraform
+
+### Phase 4
+AKS
+
+### Phase 5
+GitHub Actions
+
+### Phase 6
+AI Resume Assistant
+
+### Phase 7
+Contact Form
+
+### Phase 8
+Monitoring & Security
