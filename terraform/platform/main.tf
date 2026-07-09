@@ -44,7 +44,7 @@ resource "azurerm_role_assignment" "keyvault_reader" {
 
   scope                = azurerm_key_vault.platform.id
   role_definition_name = "Key Vault Secrets User"
-  principal_id         = azurerm_user_assigned_identity.platform.id
+  principal_id         = azurerm_user_assigned_identity.platform.principal_id
 }
 
 resource "azurerm_log_analytics_workspace" "platform" {
